@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+
+.card{
+    margin: auto;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 5px 10px rgb(231, 231, 231);
+}
+
+ol{
+    margin-left: 2rem;
+    padding: 1rem;
+    line-height: 2rem;
+}

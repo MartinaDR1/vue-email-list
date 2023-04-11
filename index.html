@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Email list</title>
 </head>
 <body>
     <div id="app">
+
         <h1>Email list</h1>
-        <ol>
-           <li v-for="mail in list_mail">{{mail}}</li>
-        </ul>
+
+        <div class="card">
+            <ol>
+            <li v-for="mail in list_mail" v-if="list_mail.length === 10 ">{{mail}}</li>
+            </ol>
+        </div>
     </div>
 
 
 
-
+    <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js" integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- myJS -->
     <script src="./assets/js/app.js"></script>
 </body>
 </html>
