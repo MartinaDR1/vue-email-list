@@ -16,8 +16,8 @@
         <h1>Email list</h1>
 
         <div class="card">
-            <ol>
-            <li v-for="mail in list_mail" v-if="list_mail.length === 10 ">{{mail}}</li>
+            <ol v-if="list_mail.length === 10 ">
+            <li v-for="mail in list_mail">{{mail}}</li>
             </ol>
         </div>
     </div>
