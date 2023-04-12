@@ -19,6 +19,10 @@
             <ol v-if="list_mail.length === 10 ">
             <li v-for="mail in list_mail">{{mail}}</li>
             </ol>
+
+            <div class="loading" v-else>
+                Loading...
+            </div>
         </div>
     </div>
 
